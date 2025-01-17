@@ -9,7 +9,11 @@
 
 (draw-box nil {:span 3 :borders {}})
 (draw-box "63" {:span 8 :borders {} :text-anchor "start"})
-(draw-box "34" {:borders {}})
+(draw-box "50" {:span 2 :borders {} :text-anchor "end"})
+(draw-box "49" {:span 2 :borders {} :text-anchor "start"})
+(draw-box "48" {:span 2 :borders {} :text-anchor "end"})
+(draw-box "47" {:span 8 :borders {} :text-anchor "start"})
+(draw-box "34" {:span 2 :borders {} :text-anchor "end"})
 (draw-box "33" {:span 2 :borders {} :text-anchor "start"})
 (draw-box "32" {:span 2 :borders {} :text-anchor "end"})
 (draw-box "31" {:span 3 :borders {} :text-anchor "start"})
@@ -21,7 +25,9 @@
 (draw-box nil {:span 3 :borders {}})
 
 (draw-box nil {:span 3 :borders {}})
-(draw-box (text "WPRI" {:font-weight "bold" :font-size 24}) {:span 9})
+(draw-box (text "WPRI" {:font-weight "bold" :font-size 24}) {:span 8})
+(draw-box "HUPMM" {:span 2})
+(draw-box (text "WPRI" {:font-weight "bold" :font-size 24}) {:span 8})
 (draw-box "VSXL[1:0]" {:span 4})
 (draw-box (text "WPRI" {:font-weight "bold" :font-size 24}) {:span 6})
 (draw-box "VTSR" {:span 2})

@@ -271,6 +271,8 @@ to VS-level memory management data structures, such as page tables. An
 implementation may make VSBE a read-only field that always specifies the
 same endianness as HS-mode.
 
+The definition of the HUPMM field is furnished by the Ssnpm extension.
+
 ==== Hypervisor Trap Delegation (`hedeleg` and `hideleg`) Registers 
 
 Register `hedeleg` is a 64-bit read/write register, formatted as shown in

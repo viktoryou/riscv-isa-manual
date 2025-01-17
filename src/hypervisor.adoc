@@ -173,8 +173,28 @@ include::images/bytefield/hstatusreg-rv32.edn[]
 
 [[hstatusreg]]
 .Hypervisor status register (`hstatus`) when HSXLEN=64.
-include::images/bytefield/hstatusreg.edn[]
-
+[wavedrom, ,svg]
+...
+{reg: [
+  {bits: 14, name: 'WPRI'},
+  {bits:  2, name: 'HUPMM'},
+  {bits: 14, name: 'WPRI'},
+  {bits:  2, name: 'VSXL[1:0]'},
+  {bits:  9, name: 'WPRI'},
+  {bits:  1, name: 'VTSR'},
+  {bits:  1, name: 'VTW'},
+  {bits:  1, name: 'VTVM'},
+  {bits:  2, name: 'WPRI'},
+  {bits:  6, name: 'VGEIN[5:0]'},
+  {bits:  2, name: 'WPRI'},
+  {bits:  1, name: 'HU'},
+  {bits:  1, name: 'SPVP'},
+  {bits:  1, name: 'SPV'},
+  {bits:  1, name: 'GVA'},
+  {bits:  1, name: 'VSBE'},
+  {bits:  5, name: 'WPRI'},
+], config:{lanes: 4, hspace:1024}}
+....
 
 The VSXL field controls the effective XLEN for VS-mode (known as
 VSXLEN), which may differ from the XLEN for HS-mode (HSXLEN). When

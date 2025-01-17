@@ -174,7 +174,7 @@ include::images/bytefield/hstatusreg-rv32.edn[]
 [[hstatusreg]]
 .Hypervisor status register (`hstatus`) when HSXLEN=64.
 [wavedrom, ,svg]
-...
+....
 {reg: [
   {bits: 14, name: 'WPRI'},
   {bits:  2, name: 'HUPMM'},
